@@ -1,0 +1,162 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --bright-blue-alpha: hsl(245, 75%, 52%, 0.4);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --desaturated-blue-alpha: hsl(224, 23%, 55%, 0.5);
+    --dark-blue: hsl(223, 47%, 23%);
+    --hover-blue: hsl(240, 65%, 70%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--pale-blue);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    place-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h2 {
+    color: black;
+    font-weight: 900;
+}
+
+#container {
+    background-image: url(./images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 100%;
+    box-shadow: 0 3px 30px var(--desaturated-blue-alpha);
+    border-radius: 15px;
+    color: var(--desaturated-blue);
+    margin: 100px;
+    padding: 250px 50px;
+    width: 450px;
+    height: 650px;
+    text-align: center;
+}
+
+.description {
+    line-height: 1.5;
+}
+
+.price-plan {
+    background-color: var(--very-pale-blue);
+    border-radius: 15px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 75px;
+}
+
+.icon-music {
+    height: 40px;
+    margin-left: 20px;
+}
+
+.annual-plan {
+    margin-right: 100px;
+}
+
+.annual-price {
+    color: black;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.annual-price span {
+    color: var(--desaturated-blue);
+    font-weight: 500;
+}
+
+.change {
+    color: var(--bright-blue);
+    font-weight: 700;
+    margin-right: 15px;
+    text-decoration: underline;
+}
+
+.change:hover {
+    color: var(--hover-blue);
+    cursor: pointer;
+}
+
+.button {
+    background-color: var(--bright-blue);
+    border-radius: 10px;
+    box-shadow: 0 10px 25px var(--bright-blue-alpha);
+    border: none;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    margin: 30px 0 10px;
+    padding: 15px;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: var(--hover-blue);
+    border: none;
+    cursor: pointer;
+}
+
+.cancel {
+    font-weight: 700;
+}
+
+.cancel:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+@media (max-width: 700px) {
+  body {
+    background-image: none;
+    display: grid;
+    place-content: center;
+  }
+
+  #container {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    padding-top: 30%;
+    width: 55%;
+    height: 625px;
+  }
+
+  .description {
+    margin-bottom: 10%;
+    width: 80%;
+  }
+
+  .price-plan {
+    padding: 5px 10px 0;
+    width: 95%;
+  }
+
+  .annual-price {
+    width: 150%;
+}
+
+.button {
+    width: 95%;
+}
+
+}

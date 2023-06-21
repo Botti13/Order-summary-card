@@ -35,7 +35,7 @@ Mobile view
 ### Links
 
 - Solution URL: [https://github.com/Botti13/Order-summary-card](https://github.com/Botti13/Order-summary-card)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://botti13.github.io/Order-summary-card/](https://botti13.github.io/Order-summary-card/)
 
 ## Author
 

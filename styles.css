@@ -1,10 +1,9 @@
 :root {
     --pale-blue: hsl(225, 100%, 94%);
-    --bright-blue: hsl(245, 75%, 52%);
+    --bright-blue: 245, 75%, 52%;
     --bright-blue-alpha: hsl(245, 75%, 52%, 0.4);
-    --very-pale-blue: hsl(225, 100%, 98%);
-    --desaturated-blue: hsl(224, 23%, 55%);
-    --desaturated-blue-alpha: hsl(224, 23%, 55%, 0.5);
+    --very-pale-blue: hsl(228, 100%, 98%);
+    --desaturated-blue: 224, 23%, 55%;
     --dark-blue: hsl(223, 47%, 23%);
     --hover-blue: hsl(240, 65%, 70%);
 }
@@ -33,9 +32,9 @@ h2 {
     background-repeat: no-repeat;
     background-color: white;
     background-size: 100%;
-    box-shadow: 0 3px 30px var(--desaturated-blue-alpha);
+    box-shadow: 0 3px 30px hsl(var(--desaturated-blue), 50%);
     border-radius: 15px;
-    color: var(--desaturated-blue);
+    color: hsl(var(--desaturated-blue));
     margin: 100px;
     padding: 250px 50px;
     width: 450px;
@@ -72,12 +71,12 @@ h2 {
 }
 
 .annual-price span {
-    color: var(--desaturated-blue);
+    color: hsl(var(--desaturated-blue));
     font-weight: 500;
 }
 
 .change {
-    color: var(--bright-blue);
+    color: hsl(var(--bright-blue));
     font-weight: 700;
     margin-right: 15px;
     text-decoration: underline;
@@ -89,9 +88,9 @@ h2 {
 }
 
 .button {
-    background-color: var(--bright-blue);
+    background-color: hsl(var(--bright-blue));
     border-radius: 10px;
-    box-shadow: 0 10px 25px var(--bright-blue-alpha);
+    box-shadow: 0 10px 25px hsl(var(--bright-blue), 40%);
     border: none;
     color: white;
     font-family: 'Red Hat Display', sans-serif;
